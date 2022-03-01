@@ -43,7 +43,7 @@
     "lint": "eslint '**/*.ts'",
     "build": "rm -rf dist && tsc",
     "compile-docs": "node ./dist/bin/compile-typescript-docs.js",
-    "prepublishOnly": "npm-run-all -s build compile-docs"
+    "prepare": "npm-run-all -s build compile-docs"
   },
   "devDependencies": {
     "@types/chai": "^4.1.4",
